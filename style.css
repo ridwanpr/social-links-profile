@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "Inter";
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+:root {
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+
+    --font-serif: "Inter";
+    --fs-small: 0.875rem;
+    --fs-large: 1.2rem;
+
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --radius-md: 14px;
+    --radius-xs: 6px;
+
+    --avatar-size: 5rem;
+    --avatar-radius-full: 50%;
+
+    --card-padding: 2rem;
+
+    --body-font: var(--font-serif);
+    --body-bg: var(--color-grey-900);
+    --body-color: var(--color-white);
+
+    --social-card-bg: var(--color-grey-800);
+    --social-card-radius: var(--radius-md);
+    --social-card-padding: var(--card-padding);
+
+    --social-avatar-radius: var(--avatar-radius-full);
+    --social-avatar-w: var(--avatar-size);
+    --social-avatar-h: var(--avatar-size);
+
+    --social-card-name-fs: var(--fs-large);
+    --social-card-name-fw: var(--fw-bold);
+
+    --social-card-address-fs: var(--fs-small);
+    --social-card-address-color: var(--color-green);
+
+    --social-card-bio-fs: var(--fs-small);
+
+    --social-link-bg: var(--color-grey-700);
+    --social-link-color: var(--color-white);
+    --social-link-fs: var(--fs-small);
+    --social-link-fw: var(--fw-semibold);
+    --social-link-radius: var(--radius-xs);
+
+    --social-link-active-bg: var(--color-green);
+    --social-link-active-color: var(--color-grey-900);
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--body-bg);
+    color: var(--body-color);
+
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution {
+    color: var(--color-white);
+    position: absolute;
+    font-size: 13px;
+    bottom: 0;
+}
+
+.attribution a {
+    color: var(--color-white);
+}
+
+.social-card {
+    background-color: var(--social-card-bg);
+    border-radius: var(--social-card-radius);
+    padding: var(--social-card-padding);
+
+    max-width: 375px;
+}
+
+.social-card__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-card__avatar {
+    width: var(--social-avatar-w);
+    height: var(--social-avatar-h);
+    border-radius: var(--social-avatar-radius);
+}
+
+.social-card__info {
+    text-align: center;
+}
+
+.social-card__name {
+    font-size: var(--social-card-name-fs);
+    font-weight: var(--social-card-name-fw);
+}
+
+.social-card__address {
+    font-size: var(--social-card-address-fs);
+    color: var(--social-card-address-color);
+}
+
+.social-card__bio {
+    font-size: var(--social-card-bio-fs);
+}
+
+.social-card__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.social-card__link {
+    background-color: var(--social-link-bg);
+    font-size: var(--social-link-fs);
+    font-weight: var(--social-link-fw);
+    color: var(--social-link-color);
+    border-radius: var(--social-link-radius);
+
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 10px;
+}
+
+.social-card__link:active,
+.social-card__link:hover {
+    background-color: var(--social-link-active-bg);
+    color: var(--social-link-active-color);
+}
